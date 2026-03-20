@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/kafka_producer.egg-info/PKG-INFO
+src/kafka_producer.egg-info/SOURCES.txt
+src/kafka_producer.egg-info/dependency_links.txt
+src/kafka_producer.egg-info/requires.txt
+src/kafka_producer.egg-info/top_level.txt
+src/kafka_producer_client/__init__.py
+src/kafka_producer_client/config.py
+src/kafka_producer_client/fastapi.py
+src/kafka_producer_client/producer.py
+tests/test_config.py

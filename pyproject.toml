@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-kafka-producer-client"
+version = "0.1.1"
+description = "High-performance, reusable Kafka producer library with synchronous and asynchronous support."
+readme = "README.md"
+authors = [{ name = "Gaian", email = "gaian@example.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["kafka", "producer", "asyncio", "confluent-kafka"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "confluent-kafka>=2.3.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/gaian/Py-Kafka"
+Repository = "https://github.com/gaian/Py-Kafka"
+Issues = "https://github.com/gaian/Py-Kafka/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

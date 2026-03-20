@@ -1,0 +1,22 @@
+"""kafka-producer-client — reusable Kafka producer for any Python project."""
+
+from .config import KafkaProducerConfig
+from .producer import KafkaProducerClient
+from .models import (
+    ActionSource, ActionType, RequesterType, NodeType, 
+    ActionLogRequestStatus, ActionLogCreateRequest, 
+    DataIngestionOperation, create_action_log_operation
+)
+
+__all__ = [
+    "KafkaProducerConfig", 
+    "KafkaProducerClient",
+    "ActionSource", 
+    "ActionType", 
+    "RequesterType", 
+    "NodeType", 
+    "ActionLogRequestStatus", 
+    "ActionLogCreateRequest", 
+    "DataIngestionOperation", 
+    "create_action_log_operation"
+]
